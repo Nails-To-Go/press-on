@@ -1,0 +1,456 @@
+
+body{
+background-color: rgb(255, 255, 255);
+text-decoration-color: aliceblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.popi{
+background-image: url(../images/Nails\ To\ Go.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+width: 100%;
+height: 200px; /* Ajusta la altura como necesites */
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.center{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(95, 19, 44);
+}
+
+.quienes-somos{
+    font-size: larger;
+    background-color: rgb(255, 204, 221);
+    padding: 20px;
+    justify-content: center;
+}
+
+.pedro{
+    justify-content: center;
+}
+
+.contenedor {
+    display: block;
+    display: flex;
+    background-color: rgb(255, 204, 221);
+    align-items: center; /* Alinea verticalmente */
+  }
+  .contenedor img {
+    width: 600px;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.banner {
+    display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.banner2 {
+    display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.centrar{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+}
+nav a{
+    color: rgb(182, 83, 133);
+    text-decoration: none;
+    padding: 10px;
+    font-size: larger;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.container
+{
+    padding: 20px;
+    width: 100%;
+    margin-top: 10%;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+
+.container h2
+{
+    background: #ff0090;
+    color: #fff;
+    width: 200px;
+    font-size: 24px;
+    padding: 5px;
+    height: 40px;
+}
+
+.container h2::after
+{
+    content: ''; 
+    border-top: 40px solid #ff0090;
+    border-right: 40px solid transparent;
+    position: relative;
+    left: 48px;
+    top: 34px;
+}
+
+.row
+
+{
+    margin-top: 30px;
+}
+
+.product-bottom .fa
+{
+    font-size: 20px;
+    color: #ffcc00;
+}
+
+.product-bottom h3
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-bottom h5
+{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.overlay
+{
+    display: block;
+    position: absolute;
+    top: 10%;
+    width: 70px;
+}
+    .image-hover-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .image-hover-container img {
+      width: 100%;
+      display: block;
+      transition: opacity 0.5s ease;
+    }
+
+    .image-hover-container .img-hover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+
+    .image-hover-container:hover .img-hover {
+      opacity: 1;
+    }
+
+    .image-hover-container:hover .img-default {
+      opacity: 0;
+    }
+
+/* Contenedor general centrado */
+.pasos {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Fila: imagen + texto */
+.contenedor8 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0; /* Espacio más reducido entre pasos */
+}
+
+/* Invertir orden para imagen derecha */
+.contenedor8.invertido {
+  flex-direction: row-reverse;
+}
+
+/* Imagen */
+.contenedor8 img {
+  width: 400px;
+  max-width: 100%;
+  margin: 0 20px;
+  border-radius: 10px;
+}
+
+/* Texto */
+.quienes-somos2 {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: larger;
+  color: rgb(95, 19, 44);
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left;
+}
+  /* Layout principal */
+    .layout-container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar1,
+    .sidebar2 {
+      width: 200px;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .sidebar1 img,
+    .sidebar2 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .p-central {
+      flex-grow: 1;
+      overflow-y: auto;
+      background-color: #fffde7;
+      padding: 20px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      /* NAVBAR */
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      nav a {
+        display: block;
+        font-size: 16px;
+        padding: 12px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+      }
+    
+      /* CONTENEDOR FLEX - IMÁGENES Y TEXTO */
+      .contenedor,
+      .contenedor8,
+      .contenedor8.invertido {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+      }
+    
+      .contenedor img,
+      .contenedor8 img {
+        width: 90%;
+        margin: 10px auto;
+      }
+    
+      .quienes-somos2 {
+        padding: 10px;
+        align-items: center;
+        font-size: 16px;
+      }
+    
+      /* TITULOS */
+      .container h2 {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+      }
+    
+      .container h2::after {
+        display: none;
+      }
+    
+      /* LAYOUT PRINCIPAL */
+      .layout-container {
+        flex-direction: column;
+        height: auto;
+      }
+    
+      .sidebar1,
+      .sidebar2 {
+        width: 100%;
+        height: auto;
+      }
+    
+      .sidebar1 img,
+      .sidebar2 img {
+        height: auto;
+        width: 100%;
+      }
+    
+      /* FOOTER */
+      footer {
+        font-size: 14px;
+        padding: 15px;
+        background-color: #ffe4ec;
+        color: #5f132c;
+      }
+      @media (max-width: 768px) {
+        footer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: 30px 20px;
+          gap: 20px;
+          max-width: 100%;
+          overflow-x: hidden;
+        }
+      
+        footer img {
+          width: 60%;
+          max-width: 250px;
+          height: auto;
+        }
+      
+        footer h2 {
+          font-size: 22px;
+          margin-bottom: 10px;
+        }
+      
+        footer p {
+          font-size: 18px;
+          line-height: 1.4;
+          padding: 0 10px;
+        }
+      }
+      
+      footer {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        padding: 40px 20px !important;
+        gap: 25px !important;
+        max-width: 100vw !important;
+        width: 100% !important;
+        overflow-x: hidden !important;
+      }
+    
+      footer img {
+        width: 100% !important;
+        max-width: 500px !important;
+        height: auto !important;
+      }
+    
+      footer h2 {
+        font-size: 28px !important;
+        margin-bottom: 15px !important;
+      }
+    
+      footer p {
+        font-size: 20px !important;
+        line-height: 1.5 !important;
+        padding: 0 15px !important;
+      }
+    }
+      
+      @media (max-width: 480px) {
+        footer {
+          padding: 12px;
+          gap: 8px;
+        }
+      
+        footer img {
+          width: 120px;
+        }
+      
+        footer p,
+        footer h2 {
+          font-size: 14px;
+        }
+      }
+    
+    
+    /* MÓVILES PEQUEÑOS (pantallas hasta 480px) */
+    @media (max-width: 480px) {
+      /* CABECERA */
+      .popi {
+        height: 150px;
+        background-size: cover;
+      }
+    
+      .center {
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+      }
+    
+      .quienes-somos {
+        font-size: 16px;
+        padding: 10px;
+      }
+    
+      .quienes-somos2 {
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+      }
+    
+      .container {
+        padding: 10px;
+        margin-top: 5%;
+      }
+    
+      .container h2 {
+        font-size: 18px;
+        padding: 10px;
+      }
+    
+      .product-bottom h3 {
+        font-size: 18px;
+      }
+    
+      .product-bottom h5 {
+        font-size: 14px;
+      }
+    
+      .image-hover-container img {
+        width: 100%;
+      }
+    
+      /* NAVBAR */
+      nav a {
+        font-size: 14px;
+        padding: 10px;
+      }
+    
+      /* FOOTER */
+      footer {
+        padding: 12px;
+        font-size: 13px;
+      }
+    }
